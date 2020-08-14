@@ -54,21 +54,6 @@ public class DominantPrimes {
         return result;
     }
 
-
-//    ONLY FOR TEST
-//    public void listPrimes(int range) {
-//        System.out.println(createPrimesMap(range).toString());
-//    }
-//
-//    public void listDominantPrimes(int minRange, int maxRange) {
-//        System.out.println(createDominantPrimes(minRange, maxRange).toString());
-//
-//    }
-//
-//    public void listSumDominantPrimes(int minRange, int maxRange) {
-//        System.out.println(sumDominantPrimes(minRange, maxRange));
-//    }
-
         public void listSolve ( int minRange, int maxRange){
             System.out.println(solve(minRange, maxRange));
         }
