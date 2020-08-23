@@ -4,16 +4,7 @@ public class AbbreviateTwoWords {
 
     public static String abbrevName(String name) {
 
-        String result = new String();
-        for (int i = 0; i < name.length(); i++) {
-            char temporary = name.charAt(i);
-            if (Character.isUpperCase(temporary)) {
-                result += temporary;
-            } else if (Character.isSpaceChar(temporary)) {
-                result += ".";
-            }
-        }
-
-        return result;
+        String[] names = name.split(" ");
+        return (names[0].charAt(0) + "." + names[1].charAt(0)).toUpperCase();
     }
 }
